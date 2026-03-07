@@ -1,0 +1,39 @@
+{
+  "name": "TRUTH MD",
+  "description": "TRUTH MD WhatsApp Bot by Courtney",
+  "logo": "https://h.uguu.se/GiYWpWoC.jpg",
+  "keywords": ["whatsapp", "bot", "baileys", "node"],
+  "repository": "https://github.com/Courtney250/TRUTH-MD",
+  "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Your WhatsApp session ID (must start with TRUTH-MD:~)",
+      "value": "",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Your WhatsApp number (e.g. 254101150748)",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
