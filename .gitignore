@@ -30,3 +30,8 @@ attached_assets/
 *-player-script.js
 .local/
 replit.md
+
+# Private/sensitive files
+auth_info*
+*.key
+*.session
