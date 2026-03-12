@@ -1,5 +1,5 @@
 {
-  "name": "TRUTH-MD",
+  "name": "MALAKZ-MD",
   "description": "TRUTH MD WhatsApp Bot",
   "logo": "https://i.ibb.co/nqsRcKDB/Xploader4.jpg",
   "keywords": [
@@ -13,8 +13,8 @@
       "required": false
     },
     "OWNER_NUMBER": {
-      "description": "Your WhatsApp number (e.g. 254101150748)",
-      "required": false
+      "description": "256787038917",
+      "required": true
     }
   },
   "buildpacks": [],
